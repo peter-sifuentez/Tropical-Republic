@@ -474,6 +474,142 @@ a.active, a:hover {
   color: #e3d196;
   transition: .5s;
 }*/
+
+/* Login modal*/
+.modal-container {
+  padding: 16px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #f1ece1;
+  box-sizing: border-box;
+}
+
+/*button {
+  background-color: #857261;
+  color: #f1ece1;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}*/
+button {
+  background-color: #857261;
+  color: #fff;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100% opacity: 0.9;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.sign-in-btn {
+  padding: 14px 20px;
+  background-color: #c5baab;
+}
+
+.sign-in-btn, .login-btn {
+  float: left;
+  width: 50%;
+}
+
+.content-container-login-btn {
+  padding: 16px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancel-btn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #5b5c52;
+}
+
+.img-container {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.content-container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+span.psw, a {
+  color: #857261;
+}
+
+span.signup {
+  float: right;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #f1ece1;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
+}
 /* Footer */
 .container-footer {
   max-width: 1170px;
