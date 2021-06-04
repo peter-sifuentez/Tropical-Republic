@@ -53,8 +53,10 @@
     </ul>
   </nav>
 
-  
+  <!--Modals-->
 
+  
+<!--Login-->
   <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 
   <div id="id01" class="modal">
@@ -71,9 +73,8 @@
         <label for="psw"><b>Password</b></label>
         <input type="password" name="psw" placeholder="Enter Password" required>
 
-
         <div class="clearfix">
-          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="sign-in-btn">Sign up</button>
+          <button onclick="document.getElementById('id02').style.display='block'" type="button" class="sign-in-btn">Sign up</button>
           <button type="submit" class="login-btn">Login</button>
         </div>
 
@@ -82,18 +83,57 @@
         </label>
       </div>
 
-      <div class="modal-container">
+      <div class="modal-container" style="background-color:#857261">
 
         <span class="psw"> <a href="#">Forgot password?</a></span>
 
-        <button type="button" onclick="document.getElementById('id01').style.display='block'" class="cancel-btn">Cancel</button>
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancel-btn">Cancel</button>
 
       </div>
 
     </form>
   </div>
 
+  <!--Sign in-->
+  <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
 
+  <div id="id02" class="modal">
+
+    <form class="modal-content animate" action="/action_page.php">
+
+      <div class="content-container-signup">
+
+        <h1>Get 15% Off</h1>
+        <p>Sign up for our Rewards Program</p>
+        <hr>
+
+      </div>
+
+      <div class="modal-container">
+        <label for="uname"><b>Email</b></label>
+        <input type="text" name="uname" placeholder="Enter Email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" name="psw" placeholder="Enter Password" required>
+
+        <button type="submit" class="create-btn">Create new account</button>
+
+
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+
+      <div class="modal-container" style="background-color:#857261">
+
+        <span class="psw"> <a href="#">Sign in here!</a></span>
+
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancel-btn">Cancel</button>
+
+      </div>
+
+    </form>
+  </div>
  
 
   <!--Footer-->
