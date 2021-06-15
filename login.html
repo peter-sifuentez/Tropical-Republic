@@ -116,8 +116,11 @@
         <label for="psw"><b>Password</b></label>
         <input type="password" name="psw" placeholder="Enter Password" required>
 
-        <button type="submit" class="create-btn">Create new account</button>
-
+        <div class="clearfix">
+          <button onclick="document.getElementById('id01').style.display='block'" type="button" class="sign-in-btn">Sign in</button>
+          <button type="submit" class="login-btn">Create new account</button>
+        </div>
+        
 
         <label>
           <input type="checkbox" checked="checked" name="remember"> Remember me
@@ -126,13 +129,12 @@
 
       <div class="modal-container" style="background-color:#857261">
 
-        <span class="psw"> <a href="#">Sign in here!</a></span>
-
         <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancel-btn">Cancel</button>
 
       </div>
 
     </form>
+    
   </div>
  
 
