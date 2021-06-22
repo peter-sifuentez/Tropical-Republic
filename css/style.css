@@ -117,6 +117,12 @@ a.active, a:hover {
   background: #f1ece1;
 }
 
+.carousel-cell::before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+}
+
 .carousel-cell {
   width: 70%;
   height: 500px;
@@ -165,10 +171,6 @@ a.active, a:hover {
 .carousel.is-fullscreen .carousel-image {
   height: auto;
   max-height: 100%;
-}
-
-.flickity-prev-next-button:disabled {
-  display: none;
 }
 
 /*Headliner*/
